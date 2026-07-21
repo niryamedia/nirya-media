@@ -36,7 +36,7 @@ export default function Footer() {
   className="
     relative
 
-    left-[285px]     /* Left / Right */
+    left-[185px]     /* Left / Right */
     top-[-90px]      /* Up / Down */
 
     w-full
