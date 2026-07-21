@@ -91,12 +91,12 @@ export default function AboutPage() {
 
           <div className="mt-14 flex flex-wrap justify-center gap-5">
 
-            <a
+            <Link
               href="/creators"
               className="rounded-xl bg-gradient-to-r from-purple-600 to-fuchsia-600 px-8 py-4 font-semibold transition hover:scale-105"
             >
               Explore Creators
-            </a>
+            </Link>
 
             </div>
 

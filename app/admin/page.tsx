@@ -4,26 +4,30 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
 import EditCreatorModal from "@/components/EditCreatorModal";
 import { useRouter } from "next/navigation";
+import type { Creator } from "@/types/creator";
 
-type Creator = {
+type Inquiry = {
   id: number;
-  name: string;
+  brand_name: string;
+  company: string;
   email: string;
   phone: string;
-  platform: string;
-  subscribers: string;
-  image: string;
+  creator_name: string;
+  creator_email: string;
+  budget: string;
+  campaign_type: string;
+  posting_date: string;
+  campaign: string;
   status: string;
-  featured: boolean;
 };
 
 export default function AdminPage() {
   const router = useRouter();
   const [creators, setCreators] = useState<Creator[]>([]);
-  const [inquiries, setInquiries] = useState<any[]>([]);
-  const [selectedInquiry, setSelectedInquiry] = useState<any>(null);
-  const [selectedCreator, setSelectedCreator] = useState<any>(null);
-  const [editingCreator, setEditingCreator] = useState<any>(null);
+  const [inquiries, setInquiries] = useState<Inquiry[]>([]);
+const [selectedInquiry, setSelectedInquiry] = useState<Inquiry | null>(null);
+const [selectedCreator, setSelectedCreator] = useState<Creator | null>(null);
+const [editingCreator, setEditingCreator] = useState<Creator | null>(null);
   const [activeTab, setActiveTab] = useState<"creators" | "inquiries">("creators");
   const [creatorSearch, setCreatorSearch] = useState("");
 const [inquirySearch, setInquirySearch] = useState("");
