@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
 import HeroCreators from "./HeroCreators";
+import Link from "next/link";
 export default function HeroMobile() {
   return (
     <section
@@ -71,19 +72,19 @@ export default function HeroMobile() {
 </p>
 <div className="mt-10 flex w-full flex-col gap-4">
 
-  <a
+  <Link
     href="/creators"
     className="rounded-xl bg-gradient-to-r from-purple-600 to-fuchsia-600 py-4 text-center font-semibold shadow-[0_0_25px_rgba(168,85,247,.35)]"
   >
     Hire Creators
-  </a>
+  </Link>
 
-  <a
+  <Link
     href="/apply"
     className="rounded-xl border border-white/10 bg-white/5 py-4 text-center font-semibold backdrop-blur-xl"
   >
     Join Network
-  </a>
+  </Link>
 
 </div>
 </div>

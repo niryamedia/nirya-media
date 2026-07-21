@@ -54,8 +54,8 @@ export default function Stats() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-gray-400">
-            One of India's fastest growing influencer marketing networks
-            connecting premium creators with ambitious brands.
+            One of India&apos;s fastest growing influencer marketing networks
+connecting premium creators with ambitious brands.
           </p>
         </motion.div>
 

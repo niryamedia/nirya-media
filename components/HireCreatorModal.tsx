@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import { supabase } from "@/lib/supabase";
+import type { Creator } from "@/types/creator";
 
 type Props = {
   open: boolean;
   onClose: () => void;
-  creator: any;
+  creator: Creator | null;
 };
 
 export default function HireCreatorModal({
@@ -26,6 +27,7 @@ export default function HireCreatorModal({
 });
 
 if (!open) return null;
+if (!creator) return null;
 const handleSubmit = async () => {
     console.log("Creator:", creator);
     console.log("INSERTING", {

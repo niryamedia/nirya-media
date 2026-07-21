@@ -46,7 +46,7 @@ export default function Services() {
   WHY NIRYAMEDIA
 </p>
         <p className="mt-6 text-center text-gray-400 max-w-2xl mx-auto">
-          Whether you're a brand looking for creators or a creator looking for opportunities, NiryaMedia brings both together through one seamless platform.
+          Whether you&apos;re a brand looking for creators or a creator looking for opportunities, NiryaMedia brings both together through one seamless platform.
         </p>
 <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-purple-600/10 blur-3xl transition-all duration-500 group-hover:scale-150" />
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">

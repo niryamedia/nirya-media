@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import WorkflowMobile from "./WorkflowMobile";
 export default function Testimonials() {
-  const newLocal = "absolute left-1/2 top-full -translate-x-1/2";
+  
   return (
   <>
     <WorkflowMobile />
