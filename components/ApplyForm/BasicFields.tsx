@@ -73,8 +73,6 @@ export default function BasicFields({
             niche: value,
           })
         }
-        className="w-full rounded-xl bg-[#16161d] p-4 outline-none"
-        required
       />
 
       <input
@@ -88,7 +86,6 @@ export default function BasicFields({
           })
         }
         className="w-full rounded-xl bg-[#16161d] p-4 outline-none"
-        required
       />
 
       <input
