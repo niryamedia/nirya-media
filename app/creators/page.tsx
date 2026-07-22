@@ -21,8 +21,9 @@ export default function CreatorsPage() {
 
   try {
     const { data, error } = await supabase
-      .from("creators")
-      .select("*");
+  .from("creators")
+  .select("*")
+  .eq("status", "approved");
 
     console.log("Data:", data);
     console.log("Error:", error);

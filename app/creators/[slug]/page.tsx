@@ -11,10 +11,11 @@ export default async function CreatorProfile({ params }: Props) {
   const { slug } = await params;
 
   const { data: creator, error } = await supabase
-    .from("creators")
-    .select("*")
-    .or(`slug.eq.${slug},id.eq.${slug}`)
-    .single();
+  .from("creators")
+  .select("*")
+  .or(`slug.eq.${slug},id.eq.${slug}`)
+  .eq("status", "approved")
+  .single();
 
   if (error || !creator) {
     notFound();

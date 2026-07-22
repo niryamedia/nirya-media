@@ -32,6 +32,7 @@ export default function CreatorActions({ creator }: Props) {
     ▶ YouTube
   </a>
 
+  {creator.instagram && creator.instagram.trim() !== "" && (
   <a
     href={creator.instagram}
     target="_blank"
@@ -40,6 +41,7 @@ export default function CreatorActions({ creator }: Props) {
   >
     📷 Instagram
   </a>
+)}
 
 </div>
 

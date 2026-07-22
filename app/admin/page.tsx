@@ -289,8 +289,8 @@ console.log("Inquiries:", inquiries);
     <p className="text-gray-400">Total Creators</p>
 
     <h2 className="mt-2 text-4xl font-bold text-purple-500">
-      {creators.length}
-    </h2>
+  {creators.filter(c => c.status === "approved").length}
+</h2>
   </div>
 
   <div
@@ -378,11 +378,11 @@ console.log("Inquiries:", inquiries);
       .includes(creatorSearch.toLowerCase());
 
     const matchesFilter =
-      creatorFilter === "all"
-        ? true
-        : creatorFilter === "featured"
-        ? creator.featured
-        : creator.status === "pending";
+  creatorFilter === "all"
+    ? creator.status === "approved"
+    : creatorFilter === "featured"
+    ? creator.featured && creator.status === "approved"
+    : creator.status === "pending";
 
     return matchesSearch && matchesFilter;
   })
