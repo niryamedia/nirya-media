@@ -27,6 +27,7 @@ export default function ImageUpload({
           }
         }}
         className="w-full rounded-xl border border-white/10 bg-[#16161d] p-4"
+        required
       />
 
       {uploading && (

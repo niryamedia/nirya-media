@@ -25,7 +25,7 @@ export default function BasicFields({
 
       <input
         type="text"
-        placeholder="👤 Full Name"
+        placeholder="👤 Channel Name"
         value={formData.name}
         onChange={(e) =>
           setFormData({
@@ -73,6 +73,8 @@ export default function BasicFields({
             niche: value,
           })
         }
+        className="w-full rounded-xl bg-[#16161d] p-4 outline-none"
+        required
       />
 
       <input
@@ -86,6 +88,7 @@ export default function BasicFields({
           })
         }
         className="w-full rounded-xl bg-[#16161d] p-4 outline-none"
+        required
       />
 
       <input

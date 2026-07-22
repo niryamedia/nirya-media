@@ -23,6 +23,7 @@ export default function MoreDetails({
           })
         }
         className="w-full rounded-xl bg-[#16161d] p-4 outline-none"
+        required
       />
 
       <input
@@ -36,6 +37,7 @@ export default function MoreDetails({
           })
         }
         className="w-full rounded-xl bg-[#16161d] p-4 outline-none"
+        required
       />
 
       <input
@@ -49,6 +51,7 @@ export default function MoreDetails({
           })
         }
         className="w-full rounded-xl bg-[#16161d] p-4 outline-none"
+        required
       />
 
       <select
@@ -60,6 +63,7 @@ export default function MoreDetails({
           })
         }
         className="w-full rounded-xl bg-[#16161d] p-4 outline-none"
+        required
       >
         <option value="YouTube">YouTube</option>
         <option value="Instagram">Instagram</option>
@@ -79,6 +83,7 @@ export default function MoreDetails({
           })
         }
         className="w-full rounded-xl bg-[#16161d] p-4 outline-none"
+        required
       />
 
       <textarea
@@ -92,6 +97,7 @@ export default function MoreDetails({
           })
         }
         className="w-full rounded-xl bg-[#16161d] p-4 outline-none"
+        required
       />
 
     </div>
