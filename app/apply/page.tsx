@@ -13,6 +13,11 @@ export default function ApplyPage() {
           <p className="mt-4 text-gray-400">
             Join Nirya Media and start collaborating with top brands.
           </p>
+
+           <p className="mt-5">
+            <span className="text-red-500">⚠️ Important</span> <h1 className="text-1xl font-bold">Please provide accurate subscriber count, monthly views, engagement rate, email address, and contact number. Verified information helps brands discover your profile and increases your chances of receiving collaboration opportunities.</h1>
+           </p>
+
         </div>
 
         <ApplyForm />
