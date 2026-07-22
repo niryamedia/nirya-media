@@ -42,7 +42,7 @@ export default function MoreDetails({
 
       <input
         type="text"
-        placeholder="🗣 Language (Hindi, English...)"
+        placeholder="🗣 Content Language (Hindi, English...)"
         value={formData.language}
         onChange={(e) =>
           setFormData({
