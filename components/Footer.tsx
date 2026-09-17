@@ -113,10 +113,10 @@ export default function Footer() {
       </a>
 
       <a
-        href="mailto:riyapathak@niryamedia.com"
+        href="mailto:team@niryamedia.com"
         className="block transition hover:text-purple-400"
       >
-        riyapathak@niryamedia.com
+        team@niryamedia.com
       </a>
 
     </div>
